@@ -10,10 +10,10 @@
 
 char ** doubleIt(char **arr, int *maxsize);
 char ** populate(char ** words, FILE *fptr, int *currentsize, int *maxsize);
-//char* generateSentence(char ** noun, char ** verb, char ** adjective, char ** preposition, char ** article, int nounsize, int verbsize, int adjsize, int prepositionsize, int articlesize); //write sentence to console window
-//void generateStory(char ** noun, char ** verb, char ** adjective, char ** preposition, char ** article, int nounsize, int verbsize, int adjsize, int prepositionsize, int articlesize, FILE *fptr); //write story to txt file
-//void displaySentence(char * sentence);
-//void cleanUp(char ** nouns, char ** verbs, char ** adjectives, char ** prepositions, char ** articles, int nounsize, int verbsize, int adjsize, int prepositionsize, int articlesize);
+char* generateSentence(char ** noun, char ** verb, char ** adjective, char ** preposition, char ** article, int nounsize, int verbsize, int adjsize, int prepositionsize, int articlesize); //write sentence to console window
+void generateStory(char ** noun, char ** verb, char ** adjective, char ** preposition, char ** article, int nounsize, int verbsize, int adjsize, int prepositionsize, int articlesize, FILE *fptr); //write story to txt file
+void displaySentence(char * sentence);
+void cleanUp(char ** nouns, char ** verbs, char ** adjectives, char ** prepositions, char ** articles, int nounsize, int verbsize, int adjsize, int prepositionsize, int articlesize);
 
 int main()
 {
@@ -82,9 +82,10 @@ int main()
 
 	//populate the dynamic array
 	nouns = populate(nouns, fptr, &nounsize, &nounmaxsize); //populate nouns
-	//verbs = populate(verbs, fptr2, &verbsize, &verbmaxsize); //populate verbs
-	//adjectives = populate(adjectives, fptr3, &adjsize, &adjmaxsize); //populate adjectives
-	//preposition = populate(preposition, fptr4, &prepositionsize, &prepositionmaxsize); //populate prepositions
+	verbs = populate(verbs, fptr2, &verbsize, &verbmaxsize); //populate verbs
+	adjectives = populate(adjectives, fptr3, &adjsize, &adjmaxsize); //populate adjectives
+	preposition = populate(preposition, fptr4, &prepositionsize, &prepositionmaxsize); //populate prepositions
+
 
 	//close the files
 	fclose(fptr);
@@ -98,25 +99,25 @@ int main()
 
 	for(int x = 0; x < 5; ++x)
 	{
-		//char * sentence = generateSentence(nouns, verbs, adjectives, preposition, articles, nounsize, verbsize, adjsize, prepositionsize, articlemaxsize);
-		//displaySentence(sentence);
-		//free(sentence);
+		char * sentence = generateSentence(nouns, verbs, adjectives, preposition, articles, nounsize, verbsize, adjsize, prepositionsize, articlemaxsize);
+		displaySentence(sentence);
+		free(sentence);
 	}
 
 	printf("Now let's create three stories that just don't make sense.\n");
 	fptr = fopen("story1.txt", "w");
-	//generateStory(nouns, verbs, adjectives, preposition, articles, nounsize, verbsize, adjsize, prepositionsize, articlemaxsize, fptr); //story 1
+	generateStory(nouns, verbs, adjectives, preposition, articles, nounsize, verbsize, adjsize, prepositionsize, articlemaxsize, fptr); //story 1
 	fclose(fptr);
 
 	fptr = fopen("story2.txt", "w");
-	//generateStory(nouns, verbs, adjectives, preposition, articles, nounsize, verbsize, adjsize, prepositionsize, articlemaxsize, fptr); //story 2
+	generateStory(nouns, verbs, adjectives, preposition, articles, nounsize, verbsize, adjsize, prepositionsize, articlemaxsize, fptr); //story 2
 	fclose(fptr);
 
 	fptr = fopen("story3.txt", "w");
-	//generateStory(nouns, verbs, adjectives, preposition, articles, nounsize, verbsize, adjsize, prepositionsize, articlemaxsize, fptr); //story 3
+	generateStory(nouns, verbs, adjectives, preposition, articles, nounsize, verbsize, adjsize, prepositionsize, articlemaxsize, fptr); //story 3
 	fclose(fptr);
 
-	//cleanUp(nouns,verbs, adjectives, preposition, articles, nounmaxsize, verbmaxsize, adjmaxsize, prepositionmaxsize, 3);
+	cleanUp(nouns,verbs, adjectives, preposition, articles, nounmaxsize, verbmaxsize, adjmaxsize, prepositionmaxsize, 3);
 
 
 	printf("The stories were generated successfully and stored in their respective text files.\n");
@@ -127,56 +128,190 @@ int main()
 
 char ** doubleIt(char **arr, int *maxsize)
 {
-    printf("Doubling array\n");
 
+    // Declare new 2D char array
     char **new_arr = (char **) malloc(sizeof(char *) * (*maxsize * 2));
 
-    for (int i = 0; i < (*maxsize * 2); ++i)
+    if (new_arr == NULL)
     {
-        new_arr[i] = (char *) malloc(sizeof(char) * LIMIT);
+        printf("malloc was not successful\n");
+		printf("Program will now terminate.\n");
+		exit(1);
     }
 
 
-    for (int i = 0; i < *maxsize; ++i)
+    // Make room for an array in memory twice the size of the previous
+    for (int i = 0; i < (*maxsize) * 2; i++)
+    {
+        new_arr[i] = (char *) malloc(sizeof(char) * LIMIT);
+        if (new_arr[i] == NULL)
+        {
+            printf("malloc was not successful\n");
+            printf("Program will now terminate.\n");
+            exit(1);
+        }
+    }
+
+
+
+    for (int i = 0; i < *maxsize; i++)
         strcpy(new_arr[i], arr[i]);
 
-    for (int i = 0; i < *maxsize; ++i)
+    // FREE THAT OLD ARRAY HE IS IMPRISONED IN MEMORY HELP HIM!
+    for (int i = 0; i < *maxsize; i++)
     {
         free(arr[i]);
         arr[i] = NULL;
     }
-
     free(arr);
     arr = NULL;
-
-
-    *maxsize = *maxsize * 2;
+    (*maxsize) *= 2;
 
     return new_arr;
 }
 
 char ** populate(char ** words, FILE *fptr, int *currentsize, int *maxsize)
 {
-    for (int i = 0; i < *maxsize; i++)
-    {
-        words[i] = (char *) malloc(sizeof(char) * LIMIT);
-    }
 
     for (int i = 0; i < *maxsize; i++)
     {
-        printf("MAxsize is %d\n", *maxsize);
-        if (*currentsize > *maxsize)
+
+        words[i] = (char *) malloc(sizeof(char) * LIMIT);
+        char * new_word = (char *) malloc(sizeof(char) * LIMIT);
+
+        if (words[i] == NULL || new_word == NULL)
         {
-            words = doubleIt(words, maxsize);
+            printf("malloc was not successful\n");
+            printf("Program will now terminate.\n");
+            exit(1);
         }
 
-        char *new_word;
-        fscanf(fptr, "%s", new_word);
+        int scan_result = fscanf(fptr, "%s", new_word);
 
-        printf("%s\n", new_word);
+        if (scan_result > 0)
+        {
+            strcpy(words[i], new_word);
+            (*currentsize)++;
+        }
 
-        *currentsize++;
+
+        if (*currentsize >= *maxsize)
+            words = doubleIt(words, maxsize);
+
     }
 
+    return words;
 
 }
+
+char* generateSentence(char ** noun, char ** verb, char ** adjective, char ** preposition, char ** article, int nounsize, int verbsize, int adjsize, int prepositionsize, int articlesize)
+{
+
+    char * full_string = (char *) malloc(sizeof(char) * 100);
+
+    if (full_string == NULL)
+    {
+        printf("malloc was not successful\n");
+		printf("Program will now terminate.\n");
+		exit(1);
+    }
+
+    int rand_article_index = rand() % articlesize;
+    int rand_adjective_index = rand() % adjsize;
+    int rand_preposition_index = rand() % prepositionsize;
+    int rand_verb_index = rand() % verbsize;
+    int rand_noun_index = rand() % nounsize;
+
+    strcpy(full_string, article[rand_article_index]);
+    strcat(full_string, " ");
+
+    strcat(full_string, adjective[rand_adjective_index]);
+    strcat(full_string, " ");
+
+
+    strcat(full_string, noun[rand_noun_index]);
+    strcat(full_string, " ");
+
+
+    strcat(full_string, verb[rand_verb_index]);
+    strcat(full_string, " ");
+
+    strcat(full_string, preposition[rand_preposition_index]);
+    strcat(full_string, " ");
+
+    rand_article_index = rand() % articlesize;
+    strcat(full_string, article[rand_article_index]);
+    strcat(full_string, " ");
+
+    rand_adjective_index = rand() % adjsize;
+    strcat(full_string, adjective[rand_adjective_index]);
+    strcat(full_string, " ");
+
+    rand_noun_index = rand() % nounsize;
+    strcat(full_string, noun[rand_noun_index]);
+    strcat(full_string, ".");
+    strcat(full_string, "\n");
+    return full_string;
+
+}
+
+void displaySentence(char * sentence)
+{
+    printf("%s", sentence);
+}
+
+void generateStory(char ** noun, char ** verb, char ** adjective, char ** preposition, char ** article, int nounsize, int verbsize, int adjsize, int prepositionsize, int articlesize, FILE *fptr)
+{
+    int rand_num = (rand() % (500 + 1 - 100) + 100);
+
+    for (int i = 0; i < rand_num; i++)
+    {
+        char * random_sentence = generateSentence(noun, verb, adjective, preposition, article, nounsize, verbsize, adjsize, prepositionsize, articlesize);
+        fprintf(fptr, "%s", random_sentence);
+    }
+}
+
+void cleanUp(char ** nouns, char ** verbs, char ** adjectives, char ** prepositions, char ** articles, int nounsize, int verbsize, int adjsize, int prepositionsize, int articlesize)
+{
+    for (int i = 0; i < nounsize; i++)
+    {
+        free(nouns[i]);
+        nouns[i] = NULL;
+    }
+    free(nouns);
+    nouns = NULL;
+
+    for (int i = 0; i < verbsize; i++)
+    {
+        free(verbs[i]);
+        verbs[i] = NULL;
+    }
+    free(verbs);
+    verbs = NULL;
+
+    for (int i = 0; i < adjsize; i++)
+    {
+        free(adjectives[i]);
+        adjectives[i] = NULL;
+    }
+    free(adjectives);
+    adjectives = NULL;
+
+    for (int i = 0; i < prepositionsize; i++)
+    {
+        free(prepositions[i]);
+        prepositions[i] = NULL;
+    }
+    free(prepositions);
+    prepositions = NULL;
+
+    for (int i = 0; i < articlesize; i++)
+    {
+        free(articles[i]);
+        articles[i] = NULL;
+    }
+    free(articles);
+    articles = NULL;
+
+}
+
