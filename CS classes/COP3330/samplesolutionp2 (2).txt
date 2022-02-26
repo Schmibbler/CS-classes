@@ -1,0 +1,1025 @@
+Beginning Text Analysis...
+Creating a TextAnalysis object text1 with limit 49.
+Here is the following text...
+
+The irony of the situation wasn't lost on anyone in the room.
+The toddler’s endless tantrum caused the entire plane anxiety.
+He had a wall full of masks so she could wear a different face every day.
+Best friends are like old tomatoes and shoelaces.
+I used to practice weaving with spaghetti three hours a day but stopped because I didn't want to die alone.
+Kevin embraced his ability to be at the wrong place at the wrong time.
+He decided to count all the sand on the beach as a hobby.
+I think I will buy the red car, or I will lease the blue one.
+Thigh high in the water, the fisherman’s hope for dinner soon turned to despair.
+The beauty of the sunset was obscured by the industrial cranes.
+As he looked out the window, he saw a clown walk by.
+Jerry liked to look at paintings while eating garlic ice cream.
+Of course, she loves her pink bunny slippers.
+I may struggle with geography, but I'm sure I'm somewhere around here.
+The Tsunami wave crashed against the raised houses and broke the pilings as if they were toothpicks.
+The efficiency we have at removing trash has made creating trash more acceptable.
+Courage and stupidity were all he had.
+He was an introvert that extroverts seemed to love.
+Situps are a terrible way to end your day.
+The bug was having an excellent day until he hit the windshield.
+You should never take advice from someone who thinks red paint dries quicker than blue paint.
+The stench from the feedlot permeated the car despite having the air conditioning on recycled air.
+It didn't take long for Gary to detect the robbers were amateurs.
+Sarah ran from the serial killer holding a jug of milk.
+The group quickly understood that toxic waste was the most effective barrier to use against the zombies.
+He decided to fake his disappearance to avoid jail.
+Everybody should read Chaucer to improve their everyday vocabulary.
+Each person who knows you has a different perception of who you are.
+He invested some skill points in Charisma and Strength.
+He colored deep space a soft yellow.
+A dead duck doesn't fly backward.
+I am my aunt's sister's daughter.
+Homesickness became contagious in the young campers' cabin.
+I liked their first two albums but changed my mind after that charity gig.
+Sometimes, all you need to do is completely make an ass of yourself and laugh it off to realise that life isn’t so bad after all.
+The fifty mannequin heads floating in the pool kind of freaked them out.
+Green should have smelled more tranquil, but somehow it just tasted rotten.
+Wisdom is easily acquired when hiding under the bed with a saucepan on your head.
+The dead trees waited to be ignited by the smallest spark and seek their revenge.
+Swim at your own risk was taken as a challenge for the group of Kansas City college students.
+A purple pig and a green donkey flew a kite in the middle of the night and ended up sunburnt.
+The newly planted trees were held up by wooden frames in hopes they could survive the next storm.
+All they could see was the blue water surrounding their sailboat.
+The most exciting eureka moment I've had was when I realized that the instructions on food packets were just guidelines.
+I would have gotten the promotion, but my attendance wasn’t good enough.
+Patricia loves the sound of nails strongly pressed against the chalkboard.
+My uncle's favorite pastime was building cars out of noodles.
+The door slammed on the watermelon.
+At that moment I was the most fearsome weasel in the entire swamp.
+
+Before any analysis is peformed for text1...
+Letter 	 Count
+A	 0
+B	 0
+C	 0
+D	 0
+E	 0
+F	 0
+G	 0
+H	 0
+I	 0
+J	 0
+K	 0
+L	 0
+M	 0
+N	 0
+O	 0
+P	 0
+Q	 0
+R	 0
+S	 0
+T	 0
+U	 0
+V	 0
+W	 0
+X	 0
+Y	 0
+Z	 0
+---------------------------------
+Word Length 	Occurances
+1 		0
+2 		0
+3 		0
+4 		0
+5 		0
+6 		0
+7 		0
+8 		0
+9 		0
+10 		0
+11 		0
+12 		0
+13 		0
+14 		0
+15 		0
+---------------------------------
+Sentence Length 	Occurances
+1 			0
+2 			0
+3 			0
+4 			0
+5 			0
+6 			0
+7 			0
+8 			0
+9 			0
+10 			0
+11 			0
+12 			0
+13 			0
+14 			0
+15 			0
+16 			0
+17 			0
+18 			0
+19 			0
+20 			0
+21 			0
+22 			0
+23 			0
+24 			0
+25 			0
+26 			0
+27 			0
+28 			0
+29 			0
+30 			0
+
+Now Performing a Letter Analysis for text1...
+After letter analysis is peformed for text1...
+Letter 	 Count
+A	 229
+B	 45
+C	 75
+D	 132
+E	 371
+F	 51
+G	 56
+H	 151
+I	 183
+J	 5
+K	 38
+L	 114
+M	 67
+N	 165
+O	 188
+P	 51
+Q	 5
+R	 156
+S	 177
+T	 249
+U	 92
+V	 29
+W	 62
+X	 6
+Y	 57
+Z	 2
+---------------------------------
+Word Length 	Occurances
+1 		0
+2 		0
+3 		0
+4 		0
+5 		0
+6 		0
+7 		0
+8 		0
+9 		0
+10 		0
+11 		0
+12 		0
+13 		0
+14 		0
+15 		0
+---------------------------------
+Sentence Length 	Occurances
+1 			0
+2 			0
+3 			0
+4 			0
+5 			0
+6 			0
+7 			0
+8 			0
+9 			0
+10 			0
+11 			0
+12 			0
+13 			0
+14 			0
+15 			0
+16 			0
+17 			0
+18 			0
+19 			0
+20 			0
+21 			0
+22 			0
+23 			0
+24 			0
+25 			0
+26 			0
+27 			0
+28 			0
+29 			0
+30 			0
+
+Now Performing a Word Analysis for text1...
+After letter Word Analysis (sentence limit) is peformed for text1...
+Exceeded and cannot produce an analysis on this component.
+Letter 	 Count
+A	 229
+B	 45
+C	 75
+D	 132
+E	 371
+F	 51
+G	 56
+H	 151
+I	 183
+J	 5
+K	 38
+L	 114
+M	 67
+N	 165
+O	 188
+P	 51
+Q	 5
+R	 156
+S	 177
+T	 249
+U	 92
+V	 29
+W	 62
+X	 6
+Y	 57
+Z	 2
+---------------------------------
+Word Length 	Occurances
+1 		26
+2 		91
+3 		141
+4 		100
+5 		81
+6 		55
+7 		48
+8 		34
+9 		18
+10 		16
+11 		1
+12 		3
+13 		1
+14 		0
+15 		0
+---------------------------------
+Sentence Length 	Occurances
+1 			0
+2 			0
+3 			0
+4 			0
+5 			0
+6 			0
+7 			0
+8 			0
+9 			0
+10 			0
+11 			0
+12 			0
+13 			0
+14 			0
+15 			0
+16 			0
+17 			0
+18 			0
+19 			0
+20 			0
+21 			0
+22 			0
+23 			0
+24 			0
+25 			0
+26 			0
+27 			0
+28 			0
+29 			0
+30 			0
+
+
+Creating a TextAnalysis object text2 with limit 101.
+Here is the following text...
+
+The sky is clear; the stars are twinkling.
+He learned the hardest lesson of his life and had the scars, both physical and mental, to prove it.
+There are over 500 starfish in the bathroom drawer.
+I received a heavy fine but it failed to crush my spirit.
+Happiness can be found in the depths of chocolate pudding.
+I'd always thought lightning was something only I could see.
+No matter how beautiful the sunset, it saddened her knowing she was one day older.
+His thought process was on so many levels that he gave himself a phobia of heights.
+The hawk didn’t understand why the ground squirrels didn’t want to be his friend.
+The murder hornet was disappointed by the preconceived ideas people had of him.
+Three generations with six decades of life experience.
+He had unknowingly taken up sleepwalking as a nighttime hobby.
+He waited for the stop sign to turn to a go sign.
+She can live her life however she wants as long as she listens to what I have to say.
+Nothing seemed out of place except the washing machine in the bar.
+The overpass went under the highway and into a secret world.
+The tortoise jumped into the lake with dreams of becoming a sea turtle.
+After exploring the abandoned building, he started to believe in ghosts.
+His seven-layer cake only had six layers.
+So long and thanks for the fish.
+He didn't heed the warning and it had turned out surprisingly well.
+He watched the dancing piglets with panda bear tummies in the swimming pool.
+The family’s excitement over going to Disneyland was crazier than she anticipated.
+She wondered what his eyes were saying beneath his mirrored sunglasses.
+He found the chocolate covered roaches quite tasty.
+She couldn't decide of the glass was half empty or half full so she drank it.
+Joe discovered that traffic cones make excellent megaphones.
+We need to rent a room for our party.
+It's raining outside.
+Tom had a great big grin on his face.
+This shop is much nicer.
+I don’t think he will win his game.
+We have cardio classes everyday.
+Tigers live at the zoo.
+I was a baby when I was born.
+He's an agent for a big insurance company.
+Her landlord kept her apartment very warm.
+The thing she missed most after she moved was the restaurant's from the city.
+One day, maybe, she'd be interested, but not right now.
+He already has a lovely wife.
+You can really get into the soul of the song with that.
+It is going to happen on Friday.
+Sloths hang upside down in trees.
+The old lady needed help crossing the street.
+The tape got stuck on my lips so I couldn't talk anymore.
+I only know one language right now.
+Kim and Matt are members of the school swim team.
+Technology makes us forget our past.
+I've got a list.
+I have the list.
+If you want one piece of advice from me, it's to freeze your oranges before you eat them.
+Star Wars made me cry.
+Tom pointed at one of the names on the list.
+I miss my boyfriend.
+She fell off the bull two seconds after she got on.
+She wasn't sure if she wanted to go or not.
+Nothing ever really took off.
+Sarey lives alone in a remote cabin.
+I have a hairless cat.
+Tom Jackson was one of the names I recognized on that list.
+I want many things for myself.
+I am a little mad right now.
+You can really get into the soul of the song with that.
+This is the biggest cat that I've ever seen.
+That's an outright lie.
+Looking back, I know it was the right decision.
+Her editor's feedback was very frustrating to her.
+I miss my college friends.
+I opened the door.
+She was always worried that everyone secretly hated her.
+You don’t listen to me.
+She had a variety of masks.
+Tom lives in a white house.
+House prices have gone up this year.
+I have never seen someone try so hard.
+That is not a pencil.
+You're making a big fuss about nothing.
+She started crying after she finished the song.
+Robert tends to talk big.
+She was hyped up and ready to get to work.
+The next thing I am going to say is true.
+I like furry animals.
+She was sick of seeing billboards for the iPhone 13 when she still had an iPhone 7.
+Toothpaste will help keep your teeth clean.
+The girl lived in a very expensive apartment, but didn't take care of it.
+He admitted defeat.
+Her expression was unreadable.
+I just need a swimming pool.
+I am a housewife.
+She took offense at his comment.
+I’ll do it sometime in the future, but I don’t know exactly when.
+Love is blind.
+Her stuffed rabbit, which she had had since she was a little girl, was named Creamy Guava.
+That movie franchise sucks.
+He bonded with his father over music.
+There are many theories regarding the origins of language.
+He feels small next to him.
+Your car is not as fast as mine.
+She sells Christmas trees.
+I can’t help thinking that I forgot to turn off the stove.
+A ninety-year-old man finished the Athens marathon last year.
+
+Before any analysis is peformed for text2...
+Letter 	 Count
+A	 0
+B	 0
+C	 0
+D	 0
+E	 0
+F	 0
+G	 0
+H	 0
+I	 0
+J	 0
+K	 0
+L	 0
+M	 0
+N	 0
+O	 0
+P	 0
+Q	 0
+R	 0
+S	 0
+T	 0
+U	 0
+V	 0
+W	 0
+X	 0
+Y	 0
+Z	 0
+---------------------------------
+Word Length 	Occurances
+1 		0
+2 		0
+3 		0
+4 		0
+5 		0
+6 		0
+7 		0
+8 		0
+9 		0
+10 		0
+11 		0
+12 		0
+13 		0
+14 		0
+15 		0
+---------------------------------
+Sentence Length 	Occurances
+1 			0
+2 			0
+3 			0
+4 			0
+5 			0
+6 			0
+7 			0
+8 			0
+9 			0
+10 			0
+11 			0
+12 			0
+13 			0
+14 			0
+15 			0
+16 			0
+17 			0
+18 			0
+19 			0
+20 			0
+21 			0
+22 			0
+23 			0
+24 			0
+25 			0
+26 			0
+27 			0
+28 			0
+29 			0
+30 			0
+
+Now Performing a Letter Analysis for text2...
+After letter analysis is peformed for text2...
+Letter 	 Count
+A	 293
+B	 46
+C	 82
+D	 142
+E	 480
+F	 84
+G	 100
+H	 249
+I	 272
+J	 4
+K	 37
+L	 139
+M	 91
+N	 248
+O	 258
+P	 60
+Q	 2
+R	 196
+S	 273
+T	 339
+U	 79
+V	 45
+W	 80
+X	 12
+Y	 79
+Z	 4
+---------------------------------
+Word Length 	Occurances
+1 		0
+2 		0
+3 		0
+4 		0
+5 		0
+6 		0
+7 		0
+8 		0
+9 		0
+10 		0
+11 		0
+12 		0
+13 		0
+14 		0
+15 		0
+---------------------------------
+Sentence Length 	Occurances
+1 			0
+2 			0
+3 			0
+4 			0
+5 			0
+6 			0
+7 			0
+8 			0
+9 			0
+10 			0
+11 			0
+12 			0
+13 			0
+14 			0
+15 			0
+16 			0
+17 			0
+18 			0
+19 			0
+20 			0
+21 			0
+22 			0
+23 			0
+24 			0
+25 			0
+26 			0
+27 			0
+28 			0
+29 			0
+30 			0
+
+Now Performing a Word Analysis for text2...
+After letter Word Analysis (sentence limit) is peformed for text2...
+The sky is clear; the stars are twinkling.
+He learned the hardest lesson of his life and had the scars, both physical and mental, to prove it.
+There are over 500 starfish in the bathroom drawer.
+I received a heavy fine but it failed to crush my spirit.
+Happiness can be found in the depths of chocolate pudding.
+I'd always thought lightning was something only I could see.
+No matter how beautiful the sunset, it saddened her knowing she was one day older.
+His thought process was on so many levels that he gave himself a phobia of heights.
+The hawk didn’t understand why the ground squirrels didn’t want to be his friend.
+The murder hornet was disappointed by the preconceived ideas people had of him.
+Three generations with six decades of life experience.
+He had unknowingly taken up sleepwalking as a nighttime hobby.
+He waited for the stop sign to turn to a go sign.
+She can live her life however she wants as long as she listens to what I have to say.
+Nothing seemed out of place except the washing machine in the bar.
+The overpass went under the highway and into a secret world.
+The tortoise jumped into the lake with dreams of becoming a sea turtle.
+After exploring the abandoned building, he started to believe in ghosts.
+His seven-layer cake only had six layers.
+So long and thanks for the fish.
+He didn't heed the warning and it had turned out surprisingly well.
+He watched the dancing piglets with panda bear tummies in the swimming pool.
+The family’s excitement over going to Disneyland was crazier than she anticipated.
+She wondered what his eyes were saying beneath his mirrored sunglasses.
+He found the chocolate covered roaches quite tasty.
+She couldn't decide of the glass was half empty or half full so she drank it.
+Joe discovered that traffic cones make excellent megaphones.
+We need to rent a room for our party.
+It's raining outside.
+Tom had a great big grin on his face.
+This shop is much nicer.
+I don’t think he will win his game.
+We have cardio classes everyday.
+Tigers live at the zoo.
+I was a baby when I was born.
+He's an agent for a big insurance company.
+Her landlord kept her apartment very warm.
+The thing she missed most after she moved was the restaurant's from the city.
+One day, maybe, she'd be interested, but not right now.
+He already has a lovely wife.
+You can really get into the soul of the song with that.
+It is going to happen on Friday.
+Sloths hang upside down in trees.
+The old lady needed help crossing the street.
+The tape got stuck on my lips so I couldn't talk anymore.
+I only know one language right now.
+Kim and Matt are members of the school swim team.
+Technology makes us forget our past.
+I've got a list.
+I have the list.
+If you want one piece of advice from me, it's to freeze your oranges before you eat them.
+Star Wars made me cry.
+Tom pointed at one of the names on the list.
+I miss my boyfriend.
+She fell off the bull two seconds after she got on.
+She wasn't sure if she wanted to go or not.
+Nothing ever really took off.
+Sarey lives alone in a remote cabin.
+I have a hairless cat.
+Tom Jackson was one of the names I recognized on that list.
+I want many things for myself.
+I am a little mad right now.
+You can really get into the soul of the song with that.
+This is the biggest cat that I've ever seen.
+That's an outright lie.
+Looking back, I know it was the right decision.
+Her editor's feedback was very frustrating to her.
+I miss my college friends.
+I opened the door.
+She was always worried that everyone secretly hated her.
+You don’t listen to me.
+She had a variety of masks.
+Tom lives in a white house.
+House prices have gone up this year.
+I have never seen someone try so hard.
+That is not a pencil.
+You're making a big fuss about nothing.
+She started crying after she finished the song.
+Robert tends to talk big.
+She was hyped up and ready to get to work.
+The next thing I am going to say is true.
+I like furry animals.
+She was sick of seeing billboards for the iPhone 13 when she still had an iPhone 7.
+Toothpaste will help keep your teeth clean.
+The girl lived in a very expensive apartment, but didn't take care of it.
+He admitted defeat.
+Her expression was unreadable.
+I just need a swimming pool.
+I am a housewife.
+She took offense at his comment.
+I’ll do it sometime in the future, but I don’t know exactly when.
+Love is blind.
+Her stuffed rabbit, which she had had since she was a little girl, was named Creamy Guava.
+That movie franchise sucks.
+He bonded with his father over music.
+There are many theories regarding the origins of language.
+He feels small next to him.
+Your car is not as fast as mine.
+She sells Christmas trees.
+Letter 	 Count
+A	 293
+B	 46
+C	 82
+D	 142
+E	 480
+F	 84
+G	 100
+H	 249
+I	 272
+J	 4
+K	 37
+L	 139
+M	 91
+N	 248
+O	 258
+P	 60
+Q	 2
+R	 196
+S	 273
+T	 339
+U	 79
+V	 45
+W	 80
+X	 12
+Y	 79
+Z	 4
+---------------------------------
+Word Length 	Occurances
+1 		49
+2 		131
+3 		226
+4 		173
+5 		93
+6 		72
+7 		59
+8 		31
+9 		21
+10 		15
+11 		5
+12 		4
+13 		1
+14 		0
+15 		0
+---------------------------------
+Sentence Length 	Occurances
+1 			0
+2 			0
+3 			3
+4 			10
+5 			10
+6 			9
+7 			11
+8 			13
+9 			6
+10 			9
+11 			4
+12 			9
+13 			4
+14 			3
+15 			2
+16 			2
+17 			1
+18 			1
+19 			2
+20 			0
+21 			0
+22 			0
+23 			0
+24 			0
+25 			0
+26 			0
+27 			0
+28 			0
+29 			0
+30 			0
+
+
+Creating a TextAnalysis object text3 with limit 31.
+Here is the following text...
+
+When shall we three meet again
+In thunder, lightning, or in rain?
+When the hurlyburly's done,
+When the battle's lost and won.
+That will be ere the set of sun.
+Where the place?
+Upon the heath.
+There to meet with Macbeth.
+I come, Graymalkin!
+Paddock calls.
+Anon
+Fair is foul, and foul is fair:
+Hover through the fog and filthy air.
+This is the sergeant
+Who like a good and hardy soldier fought
+'Gainst my captivity. Hail, brave friend!
+Say to the king the knowledge of the broil
+As thou didst leave it.
+Doubtful it stood;
+As two spent swimmers, that do cling together
+And choke their art. The merciless Macdonwald--
+Worthy to be a rebel, for to that
+The multiplying villanies of nature
+Do swarm upon him--from the western isles
+Of kerns and gallowglasses is supplied;
+And fortune, on his damned quarrel smiling,
+Show'd like a rebel's whore: but all's too weak:
+For brave Macbeth--well he deserves that name--
+Disdaining fortune, with his brandish'd steel,
+Which smoked with bloody execution,
+Like valour's minion carved out his passage
+
+Before any analysis is peformed for text3...
+Letter 	 Count
+A	 0
+B	 0
+C	 0
+D	 0
+E	 0
+F	 0
+G	 0
+H	 0
+I	 0
+J	 0
+K	 0
+L	 0
+M	 0
+N	 0
+O	 0
+P	 0
+Q	 0
+R	 0
+S	 0
+T	 0
+U	 0
+V	 0
+W	 0
+X	 0
+Y	 0
+Z	 0
+---------------------------------
+Word Length 	Occurances
+1 		0
+2 		0
+3 		0
+4 		0
+5 		0
+6 		0
+7 		0
+8 		0
+9 		0
+10 		0
+11 		0
+12 		0
+13 		0
+14 		0
+15 		0
+---------------------------------
+Sentence Length 	Occurances
+1 			0
+2 			0
+3 			0
+4 			0
+5 			0
+6 			0
+7 			0
+8 			0
+9 			0
+10 			0
+11 			0
+12 			0
+13 			0
+14 			0
+15 			0
+16 			0
+17 			0
+18 			0
+19 			0
+20 			0
+21 			0
+22 			0
+23 			0
+24 			0
+25 			0
+26 			0
+27 			0
+28 			0
+29 			0
+30 			0
+
+Now Performing a Letter Analysis for text3...
+After letter analysis is peformed for text3...
+Letter 	 Count
+A	 61
+B	 15
+C	 14
+D	 36
+E	 93
+F	 18
+G	 20
+H	 58
+I	 59
+J	 0
+K	 11
+L	 48
+M	 20
+N	 50
+O	 58
+P	 10
+Q	 1
+R	 46
+S	 51
+T	 72
+U	 23
+V	 9
+W	 24
+X	 1
+Y	 11
+Z	 0
+---------------------------------
+Word Length 	Occurances
+1 		0
+2 		0
+3 		0
+4 		0
+5 		0
+6 		0
+7 		0
+8 		0
+9 		0
+10 		0
+11 		0
+12 		0
+13 		0
+14 		0
+15 		0
+---------------------------------
+Sentence Length 	Occurances
+1 			0
+2 			0
+3 			0
+4 			0
+5 			0
+6 			0
+7 			0
+8 			0
+9 			0
+10 			0
+11 			0
+12 			0
+13 			0
+14 			0
+15 			0
+16 			0
+17 			0
+18 			0
+19 			0
+20 			0
+21 			0
+22 			0
+23 			0
+24 			0
+25 			0
+26 			0
+27 			0
+28 			0
+29 			0
+30 			0
+
+Now Performing a Word Analysis for text3...
+After letter Word Analysis (sentence limit) is peformed for text3...
+When shall we three meet again
+In thunder, lightning, or in rain?
+When the hurlyburly's done,
+When the battle's lost and won.
+That will be ere the set of sun.
+Where the place?
+Upon the heath.
+There to meet with Macbeth.
+I come, Graymalkin!
+Paddock calls.
+Anon
+Fair is foul, and foul is fair:
+Hover through the fog and filthy air.
+This is the sergeant
+Who like a good and hardy soldier fought
+'Gainst my captivity. Hail, brave friend!
+Say to the king the knowledge of the broil
+As thou didst leave it.
+Doubtful it stood;
+As two spent swimmers, that do cling together
+And choke their art. The merciless Macdonwald--
+Letter 	 Count
+A	 61
+B	 15
+C	 14
+D	 36
+E	 93
+F	 18
+G	 20
+H	 58
+I	 59
+J	 0
+K	 11
+L	 48
+M	 20
+N	 50
+O	 58
+P	 10
+Q	 1
+R	 46
+S	 51
+T	 72
+U	 23
+V	 9
+W	 24
+X	 1
+Y	 11
+Z	 0
+---------------------------------
+Word Length 	Occurances
+1 		4
+2 		27
+3 		39
+4 		37
+5 		28
+6 		12
+7 		14
+8 		6
+9 		7
+10 		3
+11 		2
+12 		0
+13 		1
+14 		0
+15 		0
+---------------------------------
+Sentence Length 	Occurances
+1 			1
+2 			1
+3 			4
+4 			2
+5 			2
+6 			4
+7 			3
+8 			3
+9 			1
+10 			0
+11 			0
+12 			0
+13 			0
+14 			0
+15 			0
+16 			0
+17 			0
+18 			0
+19 			0
+20 			0
+21 			0
+22 			0
+23 			0
+24 			0
+25 			0
+26 			0
+27 			0
+28 			0
+29 			0
+30 			0
+Ending Analysis...

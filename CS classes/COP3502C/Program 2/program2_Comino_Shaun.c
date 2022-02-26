@@ -36,6 +36,14 @@ int main()
 			for(int c = 0; c < size; ++c)
 				picture[r][c] = rand() % 2; //generate random number between 0 and 1
 
+        for (int r = 0; r < size; ++r)
+        {
+            printf("\t");
+            for(int c = 0; c < size; ++c)
+                printf("%d ", picture[r][c]);
+            printf("\n");
+        }
+
 
 		int numblobs = 0;
 
