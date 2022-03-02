@@ -42,6 +42,9 @@ int main()
             for(int c = 0; c < size; ++c)
                 printf("%d ", picture[r][c]);
             printf("\n");
+
+
+
         }
 
 

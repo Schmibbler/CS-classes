@@ -75,13 +75,26 @@ int playRound()
     split_deck_card->nextptr = NULL;
 
     card_t * current_card = player1_head;
+//    printf("\n\nPlayer 1's deck\n\n\n");
+//    while (current_card != NULL)
+//    {
+//        printf("%s \n", current_card->type);
+//        current_card = current_card->nextptr;
+//    }
+
+//    printf("\n\nPlayer 2's deck\n\n\n");
+//    current_card = player2_head;
+//    while (current_card != NULL)
+//    {
+//        printf("%s \n", current_card->type);
+//        current_card = current_card->nextptr;
+//    }
 
     card_t * player1_draw;
     card_t * player2_draw;
 
     while(deckSize(player1_head) > 0 && deckSize(player2_head) > 0)
     {
-
         player1_draw = player1_head;
         player2_draw = player2_head;
 
@@ -116,86 +129,62 @@ int playRound()
             while (result == 0)
             {
                 printf("Ugh oh...We have a tie! W-A-R!\n");
+                card_t * current_card = player1_head;
+
                 int p1_card_count = 0;
-                while (p1_next_card->nextptr != NULL && p1_card_count < 2)
+                while (p1_next_card->nextptr != NULL && p1_card_count <= 3)
                 {
                     victory_list = insertBackDeck(victory_list, copyCard(p1_next_card));
-                    // Remove the head and return the new head
                     p1_next_card = removeCard(p1_next_card, 0);
                     p1_card_count++;
                 }
 
-
                 int p2_card_count = 0;
-                while (p2_next_card->nextptr != NULL && p2_card_count < 2)
+                while (p2_next_card->nextptr != NULL && p2_card_count <= 3)
                 {
                     victory_list = insertBackDeck(victory_list, copyCard(p2_next_card));
-                    // Remove the head and return the new head
                     p2_next_card = removeCard(p2_next_card, 0);
                     p2_card_count++;
                 }
-                printf("Player 1 pulled out %s. \t ", p1_next_card->type);
-                printf("Player 2 pulled out %s.\n", p2_next_card->type);
+                printf("Player 1 pulled out %s. \t ", player1_draw->type);
+                printf("Player 2 pulled out %s.\n", player2_draw->type);
 
                 result = compareCard(p1_next_card, p2_next_card);
 
             }
-
-
+            printf("Player %d won that W-A-R!\n", result);
             victory_list = insertBackDeck(victory_list, copyCard(p1_next_card));
             victory_list = insertBackDeck(victory_list, copyCard(p2_next_card));
-            p1_next_card = removeCard(p1_next_card, 0);
-            p2_next_card = removeCard(p2_next_card, 0);
 
-//            if (p1_next_card == NULL)
-//                return 2;
-//            else if (p2_next_card == NULL)
-//                return 1;
-
-//            printf("Player %d won that W-A-R!\n", result);
-//            printf("Here are the won cards!\n");
-//            card_t * temp = victory_list;
-//
-//            while (temp != NULL)
-//            {
-//                printf("%s \n", temp->type);
-//                temp = temp->nextptr;
-//            }
+            if (p2_next_card->nextptr != NULL)
+                p2_next_card = removeCard(p2_next_card, 0);
+            if (p1_next_card->nextptr != NULL)
+                p1_next_card = removeCard(p1_next_card, 0);
 
             card_t * current_card;
 
-            // Append won cards to winning player list
-            if (result == 1 && p1_next_card != NULL)
+            if (result == 1)
             {
                 current_card = p1_next_card;
                 while (current_card->nextptr != NULL)
                     current_card = current_card->nextptr;
                 current_card->nextptr = victory_list;
 
-            } else if (result == 2 && p2_next_card != NULL)
+            } else if (result == 2)
             {
+
                 current_card = p2_next_card;
                 while (current_card->nextptr != NULL)
                     current_card = current_card->nextptr;
                 current_card->nextptr = victory_list;
             }
 
-            // In case player won the war with their last card
-            if (result == 1 && p1_next_card == NULL)
-                p1_next_card = victory_list;
-            else if (result == 2 && p2_next_card == NULL)
-                p2_next_card = victory_list;
-
-
-            // Player head assigned to the drawn card
             player1_head = p1_next_card;
             player2_head = p2_next_card;
 
         }
         printf("Player 1 has %d cards.\n", deckSize(player1_head));
         printf("Player 2 has %d cards.\n", deckSize(player2_head));
-
-        // In the case that either player wins
         if (deckSize(player1_head) == 0)
             return 2;
         else if (deckSize(player2_head) == 0)
@@ -208,13 +197,13 @@ int playRound()
 
 card_t * randomizeDeck(card_t *head)
 {
-    card_t * rand_deck_head = NULL;
+    card_t *rand_deck_head = NULL;
     int current_deck_size = deckSize(head);
 
     for (int i = 0; i < 52; i++)
     {
         int rand_card_int = rand() % current_deck_size;
-        card_t * rand_card = search(head, rand_card_int);
+        card_t *rand_card = search(head, rand_card_int);
         rand_deck_head = insertBackDeck(rand_deck_head, copyCard(rand_card));
         head = removeCard(head, rand_card_int);
         current_deck_size--;
@@ -230,7 +219,7 @@ void rules()
 	printf("You have a pile of cards and I have a pile of cards.\n");
 	printf("We will each pull the top card off of our respective deck and compare them.\n");
 	printf("The card with the highest number will win the round and take both cards.\n");
-	printf("However if there is a tie, then we have to we have to place one card faced down and the next one faced up and compare the results.\n");
+	printf("However if there is a tie, then we have to we have to place three cards out and pull one more to compare the final result.\n");
 	printf("Winner of the tie, will grab all the cards out. However if it's a tie again, then we repeat the same action.\n");
 	printf("Ready? Here we go!\n");
 }
@@ -449,8 +438,6 @@ int compareCard(card_t * cardp1, card_t * cardp2)
 
 card_t * moveCardBack(card_t *head)
 {
-    if (head->nextptr == NULL)
-        return head;
     card_t *new_head = head->nextptr;
 
     card_t *current_card = head;
