@@ -1,0 +1,97 @@
+*********************************************
+Beginning test with default constructor.
+Lets start adding books to the collection.
+Title: Julius Caesar
+Author: William Shakespeare
+Cost: 12.99
+Title: The Great Gatsby
+Author: F. Scott Fitzgerald
+Cost: 10.99
+Title: The Canterbury Tales
+Author: Geoffrey Chaucer
+Cost: 14.99
+Title: Harry Potter and the Sorcerer's Stone
+Author: J.K. Rowling
+Cost: 13.99
+Title: Moby Dick
+Author: Herman Melville
+Cost: 10.99
+Let's try adding a sixth book.
+Your library is full.
+*********************************************
+Now it is time to copy the library
+Copying your Library collection.
+Title: Julius Caesar
+Author: William Shakespeare
+Cost: 12.99
+Title: The Great Gatsby
+Author: F. Scott Fitzgerald
+Cost: 10.99
+Title: The Canterbury Tales
+Author: Geoffrey Chaucer
+Cost: 14.99
+Title: Harry Potter and the Sorcerer's Stone
+Author: J.K. Rowling
+Cost: 13.99
+Title: Moby Dick
+Author: Herman Melville
+Cost: 10.99
+*********************************************
+Now I will reverse the collection order.
+Title: Moby Dick
+Author: Herman Melville
+Cost: 10.99
+Title: Harry Potter and the Sorcerer's Stone
+Author: J.K. Rowling
+Cost: 13.99
+Title: The Canterbury Tales
+Author: Geoffrey Chaucer
+Cost: 14.99
+Title: The Great Gatsby
+Author: F. Scott Fitzgerald
+Cost: 10.99
+Title: Julius Caesar
+Author: William Shakespeare
+Cost: 12.99
+*********************************************
+Now removing book from mylibrary.
+Title: Julius Caesar
+Author: William Shakespeare
+Cost: 12.99
+Title: The Canterbury Tales
+Author: Geoffrey Chaucer
+Cost: 14.99
+Title: Harry Potter and the Sorcerer's Stone
+Author: J.K. Rowling
+Cost: 13.99
+Title: Moby Dick
+Author: Herman Melville
+Cost: 10.99
+*********************************************
+Now lets add that book to the collection.
+Title: Julius Caesar
+Author: William Shakespeare
+Cost: 12.99
+Title: The Canterbury Tales
+Author: Geoffrey Chaucer
+Cost: 14.99
+Title: Harry Potter and the Sorcerer's Stone
+Author: J.K. Rowling
+Cost: 13.99
+Title: Moby Dick
+Author: Herman Melville
+Cost: 10.99
+Title: The Hunger Games
+Author: Suzanne Collins
+Cost: 11.99
+*********************************************
+Now clearing a library.
+Checking to see if library is empty.
+Empty
+*********************************************
+Looking up an existing book.
+The Canterbury Tales
+Looking up a book that doesn't exist.
+null
+*********************************************
+End of program run.
