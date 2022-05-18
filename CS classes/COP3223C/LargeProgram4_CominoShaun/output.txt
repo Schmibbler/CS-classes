@@ -1,0 +1,42 @@
+--------------------------
+House 0 price: $100041
+House 0 size: 3267 square feet
+House 0 bathrooms: 3
+House 0 bedrooms: 1
+House 0 age: 54 years
+--------------------------
+--------------------------
+House 1 price: $115724
+House 1 size: 4278 square feet
+House 1 bathrooms: 3
+House 1 bedrooms: 3
+House 1 age: 99 years
+--------------------------
+--------------------------
+House 2 price: $105705
+House 2 size: 945 square feet
+House 2 bathrooms: 2
+House 2 bedrooms: 8
+House 2 age: 96 years
+--------------------------
+--------------------------
+House 3 price: $100491
+House 3 size: 3795 square feet
+House 3 bathrooms: 3
+House 3 bedrooms: 8
+House 3 age: 71 years
+--------------------------
+--------------------------
+House 4 price: $132391
+House 4 size: 3404 square feet
+House 4 bathrooms: 3
+House 4 bedrooms: 4
+House 4 age: 52 years
+--------------------------
+--------------------------
+House 5 price: $112382
+House 5 size: 2221 square feet
+House 5 bathrooms: 1
+House 5 bedrooms: 9
+House 5 age: 30 years
+--------------------------
